@@ -4,12 +4,14 @@ Create webapplication usind docker on AWS
 
 # Create your own project or clone repo from below git repository
 
+````
 $ git clone https://github.com/recroviral/portfolio.git
 $ cd portfolio
-
-This should be cloned on the machine where you are running the docker commands and not inside a docker container.
+```
+> This should be cloned on the machine where you are running the docker commands and not inside a docker container.
 
 # Dockerfile
+
 A Dockerfile is a simple text-file that contains a list of commands that the Docker client calls while creating an image.
 
 you can get docker file command from below link
@@ -17,9 +19,9 @@ https://docs.docker.com/engine/reference/builder/#from
 
 
 We start with specifying our base image. Use the FROM keyword to do that -
-
+```
 FROM nginx:alpine
-
+```
 The next step usually is to write the commands of copying the files and installing the dependencies. Luckily for us, the onbuild version of the image takes care of that. The next thing we need to specify is the port number that needs to be exposed. Since our flask app is running on port 5000, that's what we'll indicate.
 
 EXPOSE 80
