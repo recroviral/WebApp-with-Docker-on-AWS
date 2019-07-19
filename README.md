@@ -53,7 +53,7 @@ What good is an application that can't be shared with friends, right? So in this
 The first thing that we need to do before we deploy our app to AWS is to publish our image on a registry which can be accessed by AWS. There are many different Docker registries you can use (you can even host your own). For now, let's use Docker Hub to publish the image. To publish, just type
 
 ```
-$ docker push prakhar1989/catnip
+$ docker push recroviral/portfolio
 ```
 
 If this is the first time you are pushing an image, the client will ask you to login. Provide the same credentials that you used for logging into Docker Hub.
@@ -74,7 +74,7 @@ Once that is done, you can view your image on Docker Hub. For example, here's th
 Now that your image is online, anyone who has docker installed can play with your app by typing just a single command.
 
 ```
-$ docker run -p 8888:5000 prakhar1989/catnip
+$ docker run -p 8888:5000 recroviral/portfolio
 ```
 
 If you've pulled your hair in setting up local dev environments / sharing application configuration in the past, you very well know how awesome this sounds. That's why Docker is so cool!
@@ -104,7 +104,7 @@ Here are the steps:
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "prakhar1989/catnip",
+    "Name": "recroviral/portfolio",
     "Update": "true"
   },
   "Ports": [
