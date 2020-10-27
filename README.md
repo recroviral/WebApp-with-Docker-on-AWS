@@ -35,7 +35,7 @@ COPY dist /usr/share/nginx/html
 Now that we have our Dockerfile, we can build our image. The docker build command does the heavy-lifting of creating a Docker image from a Dockerfile.
 
 ```
-$ docker build -t recroviral/portfolio
+$ docker build -t recroviral/portfolio .
 ```
 The last step in this section is to run the image and see if it actually works (replacing my username with yours).
 
