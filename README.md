@@ -29,7 +29,7 @@ The next step usually is to write the commands of copying the files and installi
 ```
 EXPOSE 80
 
-COPY dist /usr/share/nginx/html
+COPY html /usr/share/nginx/html
 ```
 
 Now that we have our Dockerfile, we can build our image. The docker build command does the heavy-lifting of creating a Docker image from a Dockerfile.
